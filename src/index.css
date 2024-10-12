@@ -7,58 +7,41 @@
 @tailwind utilities;
 
 
-.image-gallery {
-    display: flex;
-  }
 
-  .large-image-container {
-    margin-left: 10px;
-    border: 2px solid lightblue;
-  }
+.class-drop{
+  box-shadow: 0.88px 1.77px 8.4px 4.42px #00000014;
 
-  .large-image {
-    width: 400px;
-    height: 300px;
-  }
-
-  .thumbnail-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .thumbnail {
-    margin-bottom: 5px;
-    cursor: pointer;
-    width: 80px;
-    height: 60px;
-    border: 2px solid #ccc;
-  }
-
-  .thumbnail:hover {
-    border: 2px solid blue;
-  }
-
-
+}
+.border-class{
+  border: 0.91px solid #B3B3B3;
+  border-radius: 4px;
+}
 
 @media (min-width: 1536px) {
     .container {
         max-width: 1620px;
     }
+    
 }
-@media (max-width: 1536px) {
+@media (max-width: 1512px) {
     .container {
         max-width: 1300px;
     }
+    .class-flex-desert-img{
+      display: grid !important;
+    }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1270px) {
     .class-hide-nav {
       display: none;
     }
-
-}
-@media (min-width: 1300px) {
-   
     .class-hide-example{
-        display: none;
-    }
+      display: block;
+  }
+}
+@media (min-width: 1270px) {
+  .class-hide-example{
+    display: none;
+}
+  
 }

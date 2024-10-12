@@ -1,12 +1,9 @@
 import { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
-// import Logo from "../../public/png/logo.png";
+import Logo from "/public/images/logoAAN.png";
 import { Link } from "react-router-dom";
 
-
 export default function Example({ open, setOpen }) {
- 
-
   return (
     <Transition.Root show={open} as={Fragment}>
       <Dialog as="div" className="relative z-50" onClose={setOpen}>
@@ -67,70 +64,43 @@ export default function Example({ open, setOpen }) {
                       </button>
                     </div>
                   </Transition.Child>
-                  <div className="flex  h-full flex-col overflow-y-scroll bg-[#393A3B] z-50 py-6 shadow-xl">
-                    <div className="container grid grid-cols-1 p-3">
-                      <Link to="/">
-                        {/* <img src={Logo} /> */}
+                  <div className="flex  h-full flex-col overflow-y-scroll bg-[#18546E] z-50 py-6 shadow-xl">
+                    <div className="container grid grid-cols-1 p-3 gap-3">
+                      <Link to="/" className="w-[40%] h-auto mx-auto mb-6">
+                        <img src={Logo} className="w-full h-auto"/>
+                        {/* <p className="text-white text-center mb-4">LOGO</p> */}
                       </Link>
-                      <Link to="/">
-                        <p className="hover:text-hover  text-white pt-5">
-                          Home
-                        </p>
-                      </Link>
+                      <a
+                        href="/selling"
+                        className="text-[14px] font-medium font-poppins text-white"
+                      >
+                        Top Selling
+                      </a>
+                      <a
+                        href="/activities"
+                        className="text-[14px] font-medium font-poppins text-white"
+                      >
+                        Activities
+                      </a>
+                      <a
+                        href="/burj"
+                        className="text-[14px] font-medium font-poppins text-white"
+                      >
+                        Burj Khalifa
+                      </a>
+                      <a
+                        href="/desert"
+                        className="text-[14px] font-medium font-poppins text-white"
+                      >
+                        Desert Safari
+                      </a>
 
-                      <div className="relative group ">
-                        <Link to="/services/">
-                          <div
-                            id="multiLevelDropdownButton"
-                            className="flex justify-start gap-1"
-                          >
-                            <h2 className="hover:text-hover  text-white pt-5">
-                              Services
-                            </h2>
-                            <svg
-                              className="w-2.5 h-2.5 mt-7 text-white cursor-pointer"
-                              aria-hidden="true"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 10 6"
-                            >
-                              <path
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="m1 1 4 4 4-4"
-                              />
-                            </svg>
-                          </div>
-                        </Link>
-                        
-                      </div>
-
-
-                      <Link to="/about-us/">
-                        <p className="hover:text-hover font-montserrat text-white pt-5">
-                          About Us
-                        </p>
-                      </Link>
-                      <Link to="/payment/">
-                        <p className="hover:text-hover font-montserrat text-white pt-5">
-                          Payment
-                        </p>
-                      </Link>
-
-                      <Link to="/estimating-fee/">
-                        <p className="hover:text-hover font-montserrat text-white pt-5">
-                          Estimation fee
-                        </p>
-                      </Link>
-                      <Link to="/contact-us/">
-                        <p className="hover:text-hover font-montserrat text-white pt-5">
-                          Contact
-                        </p>
-                      </Link>
-
-                     
+                      <a
+                        href=""
+                        className="text-[14px] font-medium font-poppins text-white"
+                      >
+                        Login
+                      </a>
                     </div>
                   </div>
                   {/* {hello && <Modal closeModal={closeModal} />} */}

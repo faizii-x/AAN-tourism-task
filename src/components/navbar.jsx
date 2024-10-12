@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Example from "./example";
 import { Link } from "react-router-dom";
+import Logo from "/public/images/logoAAN.png";
+
 
 const Navbar = () => {
 
@@ -14,36 +16,34 @@ const Navbar = () => {
     <>
       <div className="bg-[#18546E] pt-4 pb-4">
         <div className="flex justify-between items-center px-6">
-          <div>
+          <div className="w-full h-auto">
             <Link to="/">
-            {/* <img src={} alt="" /> */}
-            <h2 className="font-arial text-[20px] text-white w-[130px] h-[46px]">
-              LOGO
-            </h2>
+            <img src={Logo} alt="" className="w-[130px] h-[47px]"/>
+            
             </Link>
           </div>
-          <div className="gap-[27px] flex justify-start class-hide-nav">
+          <div className="gap-[27px] flex justify-start class-hide-nav ">
             <a
               href="/selling"
-              className="text-[14px] font-medium font-poppins text-white"
+              className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Top Selling
             </a>
             <a
               href="/activities"
-              className="text-[14px] font-medium font-poppins text-white"
+              className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Activities
             </a>
             <a
               href="/burj"
-              className="text-[14px] font-medium font-poppins text-white"
+              className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Burj Khalifa
             </a>
             <a
               href="/desert"
-              className="text-[14px] font-medium font-poppins text-white"
+              className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Desert Safari
             </a>
@@ -52,7 +52,7 @@ const Navbar = () => {
 
             <a
               href=""
-              className="text-[14px] font-medium font-poppins text-white"
+              className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Login
             </a>
