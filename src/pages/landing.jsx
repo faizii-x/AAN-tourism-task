@@ -1,4 +1,3 @@
-
 import Sidebar from "../components/sidebar";
 import ImageGallery from "../components/test";
 import Star1 from "../../public/images/star1.png";
@@ -50,8 +49,6 @@ const landing = () => {
           <Sidebar />
         </div>
       </div>
-
-
     </>
   );
 };

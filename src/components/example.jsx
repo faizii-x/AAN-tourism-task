@@ -68,42 +68,40 @@ export default function Example({ open, setOpen }) {
                     <div className="container grid grid-cols-1 p-3 gap-3">
                       <Link to="/" className="w-[40%] h-auto mx-auto mb-6">
                         <img src={Logo} className="w-full h-auto"/>
-                        {/* <p className="text-white text-center mb-4">LOGO</p> */}
                       </Link>
-                      <a
-                        href="/selling"
+                      <Link
+                        to="/selling"
                         className="text-[14px] font-medium font-poppins text-white"
                       >
                         Top Selling
-                      </a>
-                      <a
-                        href="/activities"
+                      </Link>
+                      <Link
+                        to="/activities"
                         className="text-[14px] font-medium font-poppins text-white"
                       >
                         Activities
-                      </a>
-                      <a
-                        href="/burj"
+                      </Link>
+                      <Link
+                        to="/burj"
                         className="text-[14px] font-medium font-poppins text-white"
                       >
                         Burj Khalifa
-                      </a>
-                      <a
-                        href="/desert"
+                      </Link>
+                      <Link
+                        to="/desert"
                         className="text-[14px] font-medium font-poppins text-white"
                       >
                         Desert Safari
-                      </a>
+                      </Link>
 
-                      <a
-                        href=""
+                      <Link
+                        to="/"
                         className="text-[14px] font-medium font-poppins text-white"
                       >
                         Login
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                  {/* {hello && <Modal closeModal={closeModal} />} */}
                 </Dialog.Panel>
               </Transition.Child>
             </div>
