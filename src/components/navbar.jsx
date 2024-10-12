@@ -70,7 +70,7 @@ const Navbar = () => {
             <p className="text-white -mt-1">|</p>
 
             <Link
-              to=""
+              to="/"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Login

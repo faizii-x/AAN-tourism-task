@@ -16,7 +16,7 @@ function ImageGallery() {
   return (
     <>
       <div className="grid lg:grid-cols-5 grid-cols-1 md:gap-2 gap-0 mb-[21px]">
-        <div className="col-span-1 ">
+        <div className="col-span-1 class-flex-small-images">
           {images.map((image, index) => (
             <img
               key={index}
