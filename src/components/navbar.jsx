@@ -21,8 +21,8 @@ const Navbar = () => {
           </div>
 
           <div className="gap-[27px] flex justify-start class-hide-nav ">
-            <a
-              href="/selling"
+            <Link
+              to="/selling"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               {pathname === "/selling" ? (
@@ -30,9 +30,9 @@ const Navbar = () => {
               ) : (
                 "Top Selling"
               )}
-            </a>
-            <a
-              href="/activities"
+            </Link>
+            <Link
+              to="/activities"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               {pathname === "/activities" ? (
@@ -40,10 +40,10 @@ const Navbar = () => {
               ) : (
                 "Activities"
               )}
-            </a>
+            </Link>
 
-            <a
-              href="/burj"
+            <Link
+              to="/burj"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               {pathname === "/burj" ? (
@@ -53,9 +53,9 @@ const Navbar = () => {
               ) : (
                 "Burj Khalifa"
               )}
-            </a>
-            <a
-              href="/desert"
+            </Link>
+            <Link
+              to="/desert"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               {pathname === "/desert" ? (
@@ -65,16 +65,16 @@ const Navbar = () => {
               ) : (
                 "Desert Safari"
               )}
-            </a>
+            </Link>
 
             <p className="text-white -mt-1">|</p>
 
-            <a
-              href=""
+            <Link
+              to=""
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
               Login
-            </a>
+            </Link>
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
