@@ -14,9 +14,9 @@ const Navbar = () => {
     <>
       <div className="bg-[#18546E] pt-4 pb-4">
         <div className="flex justify-between items-center px-6">
-          <div className="w-full h-auto">
+          <div className=" w-[130px] h-[47px]">
             <Link to="/">
-              <img src={Logo} alt="" className="w-[130px] h-[47px]" />
+              <img src={Logo} alt="" className="w-full h-auto" />
             </Link>
           </div>
 
