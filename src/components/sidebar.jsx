@@ -144,7 +144,7 @@ const Sidebar = () => {
         </div>
 
         <div className="flex justify-start  pt-2 items-center gap-3">
-          <img src={SVG} alt="" className="w-[20px] h-[20px] -mt-[41px]" />
+          <img src={SVG} alt="" className="w-[20px] h-[20px] lg:-mt-[21px] -mt-[0px]" />
           <div>
             <p className="text-[14px] font-arial font-normal text-[#000000]">
               <span className="underline text-[#239506]">

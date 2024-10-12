@@ -1,16 +1,14 @@
 import { useState } from "react";
 import Example from "./example";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "/public/images/logoAAN.png";
 
-
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const handleOnClose = () => setOpen(false);
 
-    const [open, setOpen] = useState(false);
-    const handleOnClose = () => setOpen(false);
-
-
-
+  const location = useLocation();
+  const pathname = location.pathname;
 
   return (
     <>
@@ -18,34 +16,55 @@ const Navbar = () => {
         <div className="flex justify-between items-center px-6">
           <div className="w-full h-auto">
             <Link to="/">
-            <img src={Logo} alt="" className="w-[130px] h-[47px]"/>
-            
+              <img src={Logo} alt="" className="w-[130px] h-[47px]" />
             </Link>
           </div>
+
           <div className="gap-[27px] flex justify-start class-hide-nav ">
             <a
               href="/selling"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
-              Top Selling
+              {pathname === "/selling" ? (
+                <div className=" underline underline-offset-8">Top Selling</div>
+              ) : (
+                "Top Selling"
+              )}
             </a>
             <a
               href="/activities"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
-              Activities
+              {pathname === "/activities" ? (
+                <div className=" underline underline-offset-8">Activities</div>
+              ) : (
+                "Activities"
+              )}
             </a>
+
             <a
               href="/burj"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
-              Burj Khalifa
+              {pathname === "/burj" ? (
+                <div className=" underline underline-offset-8">
+                  Burj Khalifa
+                </div>
+              ) : (
+                "Burj Khalifa"
+              )}
             </a>
             <a
               href="/desert"
               className="text-[14px] font-medium font-poppins text-white text-nowrap"
             >
-              Desert Safari
+              {pathname === "/desert" ? (
+                <div className=" underline underline-offset-8">
+                  Desert Safari
+                </div>
+              ) : (
+                "Desert Safari"
+              )}
             </a>
 
             <p className="text-white -mt-1">|</p>
@@ -89,24 +108,24 @@ const Navbar = () => {
           </div>
 
           <div className="flex class-hide-example justify-end mt-">
-              <svg
-                onClick={() => setOpen(true)}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-8 h-8 rounded-md text-white"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </div>
+            <svg
+              onClick={() => setOpen(true)}
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={1.5}
+              stroke="currentColor"
+              className="w-8 h-8 rounded-md text-white"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </div>
 
-            <Example open={open} setOpen={handleOnClose} />
+          <Example open={open} setOpen={handleOnClose} />
         </div>
       </div>
     </>

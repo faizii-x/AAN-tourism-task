@@ -12,10 +12,10 @@ import Flag from "../../public/images/flag.png";
 const CamelRide = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-3 grid-cols-2 border border-[#CDCDCD] p-3 w-full">
-        <div className="col-span-2 lg:border-r-2 border-r-0">
-          <div className="lg:flex grid justify-start gap-[11px] class-flex-desert-img">
-            <div className="w-[231px] mx-auto">
+      <div className="grid lg:grid-cols-4 grid-cols-2 border border-[#CDCDCD] p-3 w-full mb-2">
+        <div className="col-span-3 lg:border-r-2 border-r-0">
+          <div className="md:flex grid justify-start gap-[11px] class-flex-desert-img">
+            <div className="w-[231px] mx-auto flex-shrink-0 pt-4">
               <img src={Desert} alt="" className="w-full h-auto" />
             </div>
             <div>
@@ -76,7 +76,7 @@ const CamelRide = () => {
             <p>Free cancellation</p>
           </div>
           <div className="flex justify start gap-[9px] mb-[9px]">
-            <div className="w-[24px] h-[24px]">
+            <div className="w-[34px] h-[34px]">
               <img src={Time} alt="" className="w-full h-auto" />
             </div>
             <p>Reserve now & pay later</p>
@@ -88,7 +88,7 @@ const CamelRide = () => {
             </div>
             <p>Duration 1 - 3 hours</p>
           </div>
-          <div className="flex justify start gap-[9px] mb-[27px]">
+          <div className="flex justify start gap-[9px] mb-[17px]">
             <div className="w-[24px] h-[24px]">
               <img src={Flag} alt="" className="w-full h-auto" />
             </div>
@@ -97,7 +97,7 @@ const CamelRide = () => {
           <p className="text-[16px] font-arial font-normal mb-[1px]">
             Starting from
           </p>
-          <p className="text-[21px] font-arial font-bold mb-[15px]">
+          <p className="text-[21px] font-arial font-bold mb-[5px]">
             AED 69.00
           </p>
 
